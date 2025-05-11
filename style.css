@@ -1,63 +1,209 @@
+/*  
+Theme Name: Ginger Ninja! v2
+Description: The new Ginger Ninja! theme.
+Version: 1.0
+Author: Donny Burnside
+Author URI: http://www.ginger-ninja.net/
+*/
+
+/* Generic Styling */
+
 body {
-  font-family: sans-serif;
-  margin: 0;
-  display: flex;
-}
+	background:url(images/bg-body.png) repeat-x top center #E8F7F9;
+	font-family:"Trebuchet MS" Arial, Helvetica, sans-serif;
+	font-size:62.5%; /* Sets default font size to 10px */
+	color:#222222;
+	}
 
-.header {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-}
+* {
+	margin:0;
+	padding:0;
+	}
 
-.logo {
-  width: 400px; /* 원래는 120px이었을 거야 */
-  height: auto;
-}
+img {
+	border:0;
+	}
 
-.top-nav {
-  margin-top: 10px;
-}
+p {
+	margin-bottom:1.75em;
+	}
 
-.sidebar {
-  width: 250px;
-  background: #eaeaea;
-  padding: 1rem;
-  height: 100vh;
-}
+a {
+	text-decoration:none;
+	color:#B4C835;
+	}
+a:hover {
+	text-decoration:none;
+	color:#6CC7DC;
+	}
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
+/* Structure */
 
-.content {
-  flex: 1;
-  padding: 2rem;
-}
+#wrapper {
+	margin:0 auto;
+	width:700px;
+	background:#ffffff;
+	font-size:1.20em;
 
-.cards {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
+	}
+#header {
+	height:140px;
+	background:url(images/bg-header.jpg) no-repeat;
+	}
+#menu {
+	height:35px;
+	line-height:35px;
+	background:url(images/bg-menu.png) repeat-x;
+	padding:0 10px;
+	}
+#sidebar {
+	float:right;
+	width:180px;
+	background:#efefef;
+	margin-right:10px;
+	}
+#content {
+	float:left;
+	width:500px;
+	min-height:400px;
+	}
+#footer {
+	clear:both;
+	height:100px;
+	background:url(images/bg-footer.jpg) no-repeat;
+	}
 
-.card {
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 30%;
-  text-align: center;
-}
+/* Entries */
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
+.entry {
+	padding:5px 10px;
+	text-align:justify;
+	line-height:1.75em;
+	}
+.entry-title {
+	font-size:1.90em;
+	font-weight:normal;
+	letter-spacing:-1px;
+	}
+.date {
+	font-size:0.9em;
+	color:#bbb;
+	cursor:default;
+	letter-spacing:1px;
+	}
+.comments {
+	margin-top:-1em;
+	}
+.comments a {
+	color:#6CC7DC;
+	background:url(images/icon-comment.png) no-repeat 0px 2px;
+	padding-left:20px;
+	padding-right:2px;
+	}
+.comments a:hover {
+	color:#B4C835;
+	}
 
-.highlight, .secretaria {
-  background: #fff9e6;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
+
+/* Menu */
+
+#menu ul {
+	list-style-type:none;
+	}
+#menu li {
+	float:left;
+	}
+#menu li a {
+	padding:0 15px;
+	display:block;
+	color:#ffffff;
+	margin-right:2px;
+	}
+#menu li a:hover {
+	background:url(images/bg-menu-hover.png) no-repeat center center;
+	}
+
+/* Sidebar */
+
+#sidebar ul {
+	list-style-type:none;
+	margin-top:10px;
+	}
+#sidebar li {
+	
+	}
+#sidebar li a {
+	display:block;
+	height:20px;
+	line-height:20px;
+	color:#222222;
+	padding-left:5px;
+	border-bottom:1px solid #dddddd;
+	}
+#sidebar li a:hover {
+	background:#edebed;
+	color:#6CC4D8;
+	}
+#sidebar-bottom {
+	height:20px;
+	background:url(images/bg-sidebar-bottom.gif) no-repeat top center;
+	}
+
+/* Footer */
+
+#footer-valid {
+	float:left;
+	padding-top:55px;
+	padding-left:20px;
+	cursor:default;
+	color:#ffffff;
+	}
+#footer-valid a {
+	color:#ffffff;
+	text-decoration:none;
+	}
+#footer-valid a:hover {
+	color:#ffffff;
+	text-decoration:underline;
+	}
+
+/* Heading's */
+
+h1 {
+	font-size:2.5em;
+	font-weight:normal;
+	cursor:default;
+	position:relative; top:50px; left:30px;
+	letter-spacing:1px;
+	color:#aaaaaa;
+	font-style:italic;
+	}
+
+/* Feed */
+
+#feed {
+	height:25px;
+	width:126px;
+	background:url(images/bg-feed.gif) no-repeat;
+	margin:0 auto;
+	padding-left:26px;
+	}
+a.feed-button {
+	display:block;
+    width:100px;
+    height:25px;
+    background:url("images/button-feed.png") 0 0 no-repeat;
+    text-decoration: none;
+	}
+a:hover.feed-button {
+	background-position:0 -25px;
+	}
+
+/* Extra's */
+
+#ad-top {
+	width:480px;
+	height:72px;
+	background:url(images/bg-ad-top.png) no-repeat;
+	padding:5px;
+	}
