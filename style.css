@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+.top-nav {
+  margin-top: 10px;
+}
+
+.sidebar {
+  width: 250px;
+  background: #eaeaea;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.highlight, .secretaria {
+  background: #fff9e6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
