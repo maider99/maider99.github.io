@@ -11,7 +11,8 @@ body {
 }
 
 .logo {
-  width: 120px;
+  width: 400px; /* 원래는 120px이었을 거야 */
+  height: auto;
 }
 
 .top-nav {
